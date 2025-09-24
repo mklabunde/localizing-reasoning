@@ -1,0 +1,7 @@
+name: "AceReason-Nemotron-1.1-7B"
+model_id: "nvidia/AceReason-Nemotron-1.1-7B"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151665
+end_think_token_id: 151666

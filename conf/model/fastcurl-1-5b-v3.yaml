@@ -1,0 +1,7 @@
+name: "FastCuRL-1-5B-V3"
+model_id: "Nickyang/FastCuRL-1.5B-V3"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

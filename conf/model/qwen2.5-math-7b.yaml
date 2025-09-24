@@ -1,0 +1,7 @@
+name: "Qwen2.5-Math-7B"
+model_id: "Qwen/Qwen2.5-Math-7B"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: null
+end_think_token_id: null

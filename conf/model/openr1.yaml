@@ -1,0 +1,7 @@
+name: "OpenR1-Distill"
+model_id: "open-r1/OpenR1-Distill-7B"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: [13708, 766, 29]
+end_think_token_id: [522, 26865, 29]

@@ -1,0 +1,3 @@
+cache_dir: "cache_representations"
+output_file: "cka_results.csv"
+device: "cpu"

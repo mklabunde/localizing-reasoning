@@ -1,0 +1,7 @@
+name: "AReaL-boba-2-8B-Open"
+model_id: "inclusionAI/AReaL-boba-2-8B-Open"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "float16"
+start_think_token_id: 151667
+end_think_token_id: 151668

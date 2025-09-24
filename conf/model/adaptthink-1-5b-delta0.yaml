@@ -1,0 +1,7 @@
+name: "AdaptThink-1-5B-delta0"
+model_id: "THU-KEG/AdaptThink-1.5B-delta0"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

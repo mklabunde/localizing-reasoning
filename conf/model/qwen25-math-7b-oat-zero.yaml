@@ -1,0 +1,7 @@
+name: "Qwen2.5-Math-7B-Oat-Zero"
+model_id: "sail/Qwen2.5-Math-7B-Oat-Zero"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: null
+end_think_token_id: null

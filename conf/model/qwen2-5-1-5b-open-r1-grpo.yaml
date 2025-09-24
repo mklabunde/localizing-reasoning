@@ -1,0 +1,7 @@
+name: "Qwen2-5-1-5B-Open-R1-GRPO"
+model_id: "Dongwei/Qwen2.5-1.5B-Open-R1-GRPO"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

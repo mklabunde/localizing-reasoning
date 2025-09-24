@@ -1,0 +1,7 @@
+name: "DeepSeek-R1-Distill-Qwen-7B"
+model_id: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

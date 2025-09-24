@@ -1,0 +1,7 @@
+name: "Qwen2.5-Math-7B-RoPE-300k"
+model_id: "open-r1/Qwen2.5-Math-7B-RoPE-300k"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: null
+end_think_token_id: null

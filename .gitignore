@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# data
+cache_representations/
+cache_representations_2/
+cache_stitching/
+embedding_sim/
+outputs/
+multirun/
+data/

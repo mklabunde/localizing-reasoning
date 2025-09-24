@@ -1,0 +1,7 @@
+name: "DeepScaleR-1-5B-Preview"
+model_id: "agentica-org/DeepScaleR-1.5B-Preview"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

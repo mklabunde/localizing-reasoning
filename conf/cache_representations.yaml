@@ -1,0 +1,37 @@
+# @package _global_
+
+# Default model to run. This can be overridden from the command line.
+# e.g., python run_caching.py model=Skywork_Skywork-OR1-7B
+defaults:
+  - model: nvidia_AceReason-Nemotron-7B
+  - _self_
+
+# --- Experiment Parameters ---
+dataset:
+  name: "HuggingFaceH4/MATH-500"
+  split: "test"
+  max_samples: 50 # Number of problems to process from the dataset
+
+generation:
+  max_new_tokens: 32000
+
+device: "cuda:2"
+
+# --- Caching and Output ---
+cache_dir: "cache_representations"
+
+# --- Analysis Parameters ---
+# Layers to extract. 0 is the first layer. -1 is the last layer.
+# You can add more, e.g., [0, 8, 16, 24, 31] for a 32-layer model.
+# The script will resolve -1 to the actual last layer index.
+layers_to_extract: [0, 6, 12, 18, -1]
+
+# Token positions to analyze. Names must be filesystem-friendly.
+# "assistant_start": The first token of the assistant role (e.g., <|Assistant|> or assistant when <im_start> is used).
+# "reasoning_X": The token at X% of the way through the generated reasoning sequence.
+token_positions:
+  assistant_start: 1.0
+  reasoning_25p: 0.25
+  reasoning_50p: 0.50
+  reasoning_75p: 0.75
+  reasoning_end: 1.0 # 1.0 corresponds to the final token

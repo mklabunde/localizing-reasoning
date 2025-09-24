@@ -1,0 +1,7 @@
+name: "Thinkless-1-5B-RL-DeepScaleR"
+model_id: "Vinnnf/Thinkless-1.5B-RL-DeepScaleR"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

@@ -1,0 +1,7 @@
+name: "STILL-3-1-5B-preview"
+model_id: "RUC-AIBOX/STILL-3-1.5B-preview"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

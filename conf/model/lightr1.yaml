@@ -1,0 +1,7 @@
+name: "Light-R1-7B-DS"
+model_id: "qihoo360/Light-R1-7B-DS"
+dtype:
+  _target_: reasoning.dtypes.get_dtype
+  name: "bfloat16"
+start_think_token_id: 151648
+end_think_token_id: 151649

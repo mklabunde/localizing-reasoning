@@ -1,0 +1,74 @@
+defaults:
+  - model@acereason: acereason
+  - model@lightr1: lightr1
+  - model@qwen-r1-distill: qwen-r1-distill
+  - model@openreasoner: openreasoner
+  - model@acereason1-1: acereason1-1
+  - model@openr1: openr1
+  - model@qwen25-math-7b-oat-zero: qwen25-math-7b-oat-zero
+  - model@conciser-zero-7b: conciser-zero-7b
+  - model@qwen25-math-7b: qwen2.5-math-7b
+  - model@adaptthink-1-5b-delta0: adaptthink-1-5b-delta0
+  - model@athena-r3-1-5b: athena-r3-1-5b
+  - model@atlas-flash-1-5b-preview: atlas-flash-1-5b-preview
+  - model@deepcoder-1-5b-preview: deepcoder-1-5b-preview
+  - model@deepmath-1-5b: deepmath-1-5b
+  - model@deepscaler-1-5b-preview: deepscaler-1-5b-preview
+  - model@fastcurl-1-5b-v3: fastcurl-1-5b-v3
+  - model@minimath-r1-1-5b: minimath-r1-1-5b
+  - model@nemotron-research-reasoning-qwen-1-5b: nemotron-research-reasoning-qwen-1-5b
+  - model@open-rs1: open-rs1
+  - model@open-rs3: open-rs3
+  - model@qwen-r1-distill-1-5b: qwen-r1-distill-1-5b
+  - model@qwen2-5-1-5b-open-r1-grpo: qwen2-5-1-5b-open-r1-grpo
+  - model@still-3-1-5b-preview: still-3-1-5b-preview
+  - model@thinkless-1-5b-rl-deepscaler: thinkless-1-5b-rl-deepscaler
+  - model@zr1-1-5b: zr1-1-5b
+  - _self_
+
+cache_dir: "cache_representations"
+output_file: "cka_fixed_input_results.csv"
+device: "cpu"
+source_model_selection:
+  # qwen-r1-distill-7b derivatives
+  - acereason
+  - lightr1
+  - qwen-r1-distill
+  - openreasoner
+  # qwen-2.5-math-base derivatives
+  - acereason1-1
+  - openr1
+  - qwen-r1-distill
+  - qwen25-math-7b
+comparison_model_selection:
+  ### qwen-r1-distill 7b derivatives
+  # - acereason
+  # - lightr1
+  # - qwen-r1-distill
+  # - openreasoner
+  ### qwen-2.5-math-base derivatives
+  - acereason1-1
+  - openr1
+  - qwen-r1-distill
+  - qwen25-math-7b
+  - qwen25-math-7b-oat-zero
+  - conciser-zero-7b
+  # ### qwen-r1 distill 1.5b derivatives
+  # - adaptthink-1-5b-delta0
+  # - athena-r3-1-5b
+  # - atlas-flash-1-5b-preview
+  # - deepcoder-1-5b-preview
+  # - deepmath-1-5b
+  # - deepscaler-1-5b-preview
+  # - fastcurl-1-5b-v3
+  # - minimath-r1-1-5b
+  # - nemotron-research-reasoning-qwen-1-5b
+  # - open-rs1
+  # - open-rs3
+  # - qwen-r1-distill-1-5b
+  # - qwen2-5-1-5b-open-r1-grpo
+  # - still-3-1-5b-preview
+  # - thinkless-1-5b-rl-deepscaler
+  # - zr1-1-5b
+keep_models_in_mem: true
+model_devices: [null]
