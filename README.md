@@ -1,5 +1,4 @@
-[2025-08-22] This is the initial accompanying code for the paper. We will add clearer instructions how to reproduce the results in the next days.
-[2025-08-25] First update
+Code for the paper "Localizing Reasoning Training-Induced Changes in Large Language Models" at the Mechanistic Interpretability Workshop at NeurIPS 2025.
 
 ## Setup
 Install uv: https://docs.astral.sh/uv/getting-started/installation/.
